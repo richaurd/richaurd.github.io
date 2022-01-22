@@ -1,0 +1,151 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: slategray;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  color: #000;
+  flex: 30%;
+  background-color: beige;
+  padding: 20px;
+}
+
+.main {
+  color: #000;
+  flex: 70%;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+hr.solid {
+  border-top: 3px solid rgb(94, 92, 92);
+}
+
+.container{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+}
+
+.box{
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.box:hover > .title:after{
+  width: 35px;
+}
+
+.box:hover > .title:before{
+  width: 35px;
+}
+
+.box:hover .img{
+  transform: translateY(-10px);
+}
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: .1rem;
+  margin-bottom: .5rem;
+  position: relative;
+}
+
+.title:after{ 
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 0;
+  height: 4px;
+  border-radius: 2px 0 0 2px;
+  background-color: royalblue;
+  transition: .5s;
+}
+
+.title:before{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  border-radius: 0 2px 2px 0;
+  background-color: royalblue;
+  transition: .5s;
+}
+
+.img{
+  width: 90px;
+  height: 90px;
+  position: relative;
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+
+.img:after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 90px;
+}
+.title h4{
+  color: rgb(0, 0, 0);
+  margin-top: 1.5rem;
+}
+.icon{
+  width: 90px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 700px) {
+  .container{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 50px;
+  }
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
