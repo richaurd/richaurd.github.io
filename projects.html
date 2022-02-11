@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Richaurd Valencia's Webpage</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <h3>Richaurd Valencia</h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#project1">Project 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="#project2">Project 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="#project3">Project 3</a></li>
+          <li class="nav-item"><a class="nav-link" href="#project4">Project 4</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<section  class="intro-section">
+    <div class="container">
+      <div class="row align-items-center text-white">
+        <div class="col-md-6 intros text-start">
+          <h1 class="display-2">
+            <span class="display-2--intro">Project info</span>
+            <span class="display-2--description lh-base">
+              Here are the projects listed on the Home page but in greater detail.
+            </span>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+  </section>
+    
+
+<section id="project1">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="display-3 fw-bold">Project 1</h1>
+        <div class="heading-line mb-1"></div>
+      </div>
+      <div class="row pt-2 pb-2 mt-0 mb-3">
+        <div class="col-md-6 border-right">
+          <div class="bg-white p-3">
+            <h2 class="fw-bold text-capitalize text-center">
+              A Chat Application for Remote Message Exchange
+            </h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="bg-white p-4 text-start">
+            <p>A simple chat application that utilizes socket programming.</p>
+            <p>Written in C and compiles in a Linux system environment.</p>
+            <p>Uses TCP Sockets in the peer connection implementation and uses the select() API for handling multiple socket connections.</p> 
+            <p>I integrated both client-side and server side code into one program and ran on each peer.</p>
+            <p>The process takes one command line parameters. The parameter indicates the port on which your process will listen for the incoming connections. For example, you can run it like this: ./chat 4322, where 4322 is the listening port.</p>
+            <p>When launched, the process works like a UNIX shell. It accepts incoming connections and at the same time provides a user interface that will offer the following command options:</p>
+            <ol>
+              <li><b>help</b>- Display information about the available user interface options or command manual.</li>
+              <li><b>myip</b>- Display the IP address of this process.</li>
+              <li><b>myport</b>- Display the port on which this process is listening for incoming connections.</li>
+              <li><b>connect &lt;destination&gt; &lt;port no&gt;</b>>- This command establishes a new TCP connection to the specified &lt;destination&gt; at the specified &lt;port no&gt;. The &lt;destination&gt; is the IP address of the computer. Any attempt to connect to an invalid IP is rejected and suitable error messages are displayed. </li>
+              <li><b>list</b>>- Display a numbered list of all the connections this process is part of. This numbered list will include connections initiated by this process and connections initiated by other processes. The output should display the IP address and the listening port of all the peers the process is connected to.</li>
+              <li><b>terminate &lt;connection id.&gt;</b>>- This command will terminate the connection listed under the specified number when LIST is used to display all connections.</li>
+              <li><b>send &lt;connection id.&gt; &lt;message&gt;</b>>- (For example, send 3 Oh! This project is a piece of cake). This will send the message to the host on the connection that is designated by the number 3 when command “list” is used. The message to be sent can be up-to 100 characters long, including blank spaces. On successfully executing the command, the sender displays “Message sent to &lt;connection id.&gt;” on the screen.</li>
+              <li><b>exit</b>>- Close all connections and terminate this process. The other peers also update their connection list by removing the peer that exits.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+  
+<section id="project2">
+  <div class="container">
+    <div class="row text-center">
+      <h1 class="display-3 fw-bold">Project 2</h1>
+      <div class="heading-line mb-1"></div>
+    </div>
+    <div class="row pt-2 pb-2 mt-0 mb-3">
+      <div class="col-md-6 border-right">
+        <div class="bg-white p-3">
+          <h2 class="fw-bold text-capitalize text-center">
+            QuikQuisine- Android Application
+          </h2>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="bg-white p-4 text-start">
+          <p>Currently Quik Quisine is an app that allows people who have limited ingredients to find recipes based on the ingredients, as well as buy missing ingredients. It allows users to specify what types of recipes they would like to make with the ingredients as well such as vegetarian, desserts, etc. It also allows them to rate and review different recipes.</p>
+          <p>At the time this app was designed the world was in a pandemic. We decided to design an app that could help people who were perhaps low on income and needed to scramble a meal together with whatever they had at home.</p>
+          <p>Quik Quisine is the solution to these problems as it would show users how to create recipes with the few ingredients they have in the house. Not only that but it would also allow users to be able to order missing ingredients through the app. With both issues dealt with it would allow more people to save money by being able to cook at home.</p>
+          <p>Designed with Flutter and Dart to develop cross platform applications for Android and iOS mobile devices and utilizes Rails API and MySQL to set up the server.</p>
+          <p>Functionality includes:</p>
+          <ul>
+            <li>the creation of user profiles</li>
+            <li>recommending recipes based on user's taste and trends</li>
+            <li>the ability to order ingredients to be delivered to the user's home throught the use of third party APIs</li>
+            <li>the creation of roles to allow chefs to create recipes</li>
+            <li>the ability to follow famous chefs and save recipes</li>
+            <li>a recipe review system</li>
+            <li>a the ability to search and filter the database for recipes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="project3">
+  <div class="container">
+    <div class="row text-center">
+      <h1 class="display-3 fw-bold">Project 3</h1>
+      <div class="heading-line mb-1"></div>
+    </div>
+    <div class="row pt-2 pb-2 mt-0 mb-3">
+      <div class="col-md-6 border-right">
+        <div class="bg-white p-3">
+          <h2 class="fw-bold text-capitalize text-center">
+            Distance Vector Routing Protocol
+          </h2>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="bg-white p-4 text-start">
+          <p>This is a simplified version of the Distance Vector Routing Protocol that runs on 4 four servers/laptops (behaving as routers) using TCP.</p>
+          <p>The servers are able to output their forwarding tables along with the cost and be robust to link changes. A server sends out routing packets in the following two conditions: a) periodic update and b) the user uses command asking for one.</p>
+          <p>In this environment, costs are bi-directional. Whenever a new server is added to the network, it will read its local topology file to determine who are its neighbors. Routing updates are exchanged periodically between neighboring servers. When this newly added server sends routing messages to its neighbors, they will add an entry in their routing tables corresponding to it. When a server has been removed from a network, it will no longer send distance vector updates to its neighbors.</p>
+          <p>Use the following command options:</p>
+          <ol>
+            <li><b>server -t &lt;topology-file-name&gt; -i &lt;routing-update-interval&gt;</b>>- topology-file-name: The topology file contains the initial topology configuration for the server. routing-update-interval: It specifies the time interval between routing updates in seconds. port and server-id: They are written in the topology file. The server should find its port and server-id in the topology file without changing the entry format or adding any new entries.</li>
+            <li><b>update &lt;server-ID1&gt; &lt;server-ID2&gt; &lt;Link Cost&gt;</b>>- server-ID1, server-ID2: The link for which the cost is being updated. Link Cost: It specifies the new link cost between the source and the destination server. Note that this command will be issued to both server-ID1 and server-ID2 and involve them to update the cost and no other server.</li>
+            <li><b>step</b>>- Send routing update to neighbors right away. Note that except this, routing updates only happen periodically.</li>
+            <li><b>disable &lt;sever-ID&gt;</b>>- Disable the link to a given server. Doing this “closes” the connection to a given server with server-ID.</li>
+            <li><b>crash</b>>- Close all connections. This is to simulate server crashes. Close all connections on all links. The neighboring servers set the link cost to infinity.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="project4">
+  <div class="container">
+    <div class="row text-center">
+      <h1 class="display-3 fw-bold">Project 4</h1>
+      <div class="heading-line mb-1"></div>
+    </div>
+    <div class="row pt-2 pb-2 mt-0 mb-3">
+      <div class="col-md-6 border-right">
+        <div class="bg-white p-3">
+          <h2 class="fw-bold text-capitalize text-center">
+            Graph with weights
+          </h2>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="bg-white p-4 text-start">
+          <p>A Java program that allowed users to create graphs by inputing nodes and weights.</p>
+          <p>Once the user has finished inputing their edge data, the program will apply several algorithms for traversing data structures.</p>
+          <p>The three algorithms are Depth First Search, Breadth First Search, and Minnimum Spanning Tree.</p>
+          <p>The program will illustrate the traversal order to reach every node in the graph.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="misc">
+  <div class="container">
+    <div class="row text-center">
+      <h1 class="display-3 fw-bold">Smaller Projects</h1>
+      <div class="heading-line mb-1"></div>
+    </div>
+    <div class="row pt-2 pb-2 mt-0 mb-3">
+      <div class="col-md-6 border-right">
+        <div class="bg-white p-3">
+          <h2 class="fw-bold text-capitalize text-center">
+            Miscellaneous Data Structures and Algorithms
+          </h2>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="bg-white p-4 text-start">
+          <p>Beyond these four projects, I have experience with a variety of data structures and associated algorithms such as:</p>
+          <ul>
+            <li>AVL trees</li>
+            <li>Linked Lists</li>
+            <li>Hash Tables</li>
+            <li>Graphs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id ="contact" class="footer">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+        <div class="contact-box__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <polyline points="3 9 12 15 21 9 12 3 3 9" />
+            <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+            <line x1="3" y1="19" x2="9" y2="13" />
+            <line x1="15" y1="13" x2="21" y2="19" />
+          </svg>
+        </div>
+        <div class="contact-box__info">
+          <a href="#" class="contact-box__info--title">richaurdv@gmail.com</a>
+          <p class="contact-box__info--subtitle">Email</p>
+        </div>
+      </div>     
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row text-white justify-content-center mt-3 pb-3">
+      <div class="col-12 col-sm-6 col-lg-6 mx-auto">
+        <h5 class="text-capitalize fw-bold">Webpage Info</h5>
+        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+        <p class="lh-lg">
+          Webpage is based on the tutorial for bootstrap and SASS created by Patrick Muriungi.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom pt-5 pb-5">
+    <div class="container">
+      <div class="row text-center text-white">
+        <div class="col-12">
+          <div class="footer-bottom__copyright">
+            &COPY; Copyright 2022 Valencia | Created by Richaurd Valencia</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="shadow btn-primary rounded-circle back-to-top">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
